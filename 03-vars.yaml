@@ -1,5 +1,5 @@
 - name: play with variables
-  host: local
+  hosts: local
   connection: local
   vars:
     Course: Ansible
