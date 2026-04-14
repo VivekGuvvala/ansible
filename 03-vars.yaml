@@ -1,0 +1,11 @@
+- name: play with variables
+  host: local
+  connection: local
+  vars:
+    Course: Ansible
+    Duration: 10
+    Trainer: Vivek
+  tasks:
+  - name: print the course info
+    ansible.builtin.demo:
+      msg: "course name is {{ Course}}, Duration is {{ Duration }} and trainer is {{ Trainer }}
