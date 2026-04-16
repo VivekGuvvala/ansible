@@ -7,5 +7,5 @@
     private: false
   tasks:
   - name: print credintials
-    anasible.builtin.debug:
+    ansible.builtin.debug:
       msg: "Hellow, username is : {{ username }}"
