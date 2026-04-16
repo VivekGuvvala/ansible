@@ -1,0 +1,11 @@
+- name: variables for prompt
+  hosts: local
+  connection: local
+  vars_prompt:
+  - name: username
+    prompt: what is your name?
+    private: false
+  tasks:
+  - name: print credintials
+    anasible.builtin.debug:
+      msg: "Hellow, username is : {{ username }}"
